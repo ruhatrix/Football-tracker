@@ -27,7 +27,7 @@ A real-time football match tracking application built with React frontend and Ex
 
 ## 📸 Screenshots
 
-*(Add screenshots of your application here)*
+
 
 ## 🛠️ Installation & Setup
 
