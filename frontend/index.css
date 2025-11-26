@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav {
+  margin-bottom: 20px;
+}
+
+nav a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Match List Styles */
+.match-list h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.matches {
+  display: grid;
+  gap: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.match-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.teams {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 18px;
+}
+
+.team {
+  font-weight: bold;
+}
+
+.score {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+  min-width: 80px;
+  text-align: center;
+}
+
+.view-details {
+  background: #007bff;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.view-details:hover {
+  background: #0056b3;
+  text-decoration: none;
+}
+
+/* Match Detail Styles */
+.match-detail h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.match-header {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.match-header .teams h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.match-header .score {
+  font-size: 48px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.events {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.events h3 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.event {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.event:last-child {
+  border-bottom: none;
+}
+
+.minute {
+  font-weight: bold;
+  color: #666;
+  min-width: 40px;
+}
+
+.type {
+  font-weight: bold;
+}
+
+.player {
+  color: #333;
+}
+
+.team {
+  color: #666;
+  font-style: italic;
+}
+
+/* Event type colors */
+.event.goal .type {
+  color: #28a745;
+}
+
+.event.yellow_card .type {
+  color: #ffc107;
+}
+
+.event.red_card .type {
+  color: #dc3545;
+}
+
+.event.foul .type {
+  color: #6c757d;
+}
