@@ -1,61 +1,42 @@
-⚽ Football Match Tracker
+# ⚽ Football Match Tracker
 
-A simple real-time football match tracking system built using Express.js (backend) and React (frontend).
-Live updates are delivered using Event Streams (Server-Sent Events — SSE).
+A real-time football match tracking application built with React frontend and Express/TypeScript backend. Features live updates using Event Streams for real-time match data.
 
-🎯 Goal
+![Football Tracker](https://img.shields.io/badge/React-18.2.0-blue)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)
+![Express](https://img.shields.io/badge/Express-4.18-green)
 
-Enable admins to create and start football matches, while users can view live match updates (goals, cards, fouls, etc.) streamed in real time.
+## 🚀 Features
 
-✅ Features
-👨‍💼 Admin Features
+### Admin Features
+- Create new football matches between two teams
+- Start matches and manage match status
+- Add goals and match events in real-time
 
-Create a match with two teams.
+### User Features
+- View live list of ongoing matches with real-time score updates
+- Detailed match view with live event streaming
+- Real-time goal notifications
+- Beautiful, responsive UI with dark theme
 
-Start a created match.
-(No authentication required for this project.)
+### Technical Features
+- **Frontend**: React with TypeScript, Vite build tool
+- **Backend**: Express.js with TypeScript
+- **Real-time Communication**: Server-Sent Events (Event Streams)
+- **Styling**: Modern CSS with gradient designs and animations
 
-👥 User Features
-🔹 Match List Page
+## 📸 Screenshots
 
-Displays a list of all ongoing (started) matches.
+*(Add screenshots of your application here)*
 
-Shows live goal updates using Event Streams (SSE).
+## 🛠️ Installation & Setup
 
-Each match includes a “View Details” button.
+### Prerequisites
+- Node.js (version 14 or higher)
+- npm or yarn
 
-🔹 Match Detail Page
+### Backend Setup
 
-Displays real-time updates for only the selected match.
-
-Live updates include:
-
-Goals
-
-Cards (optional)
-
-Fouls or other simple match events (optional)
-
-Updates are streamed using SSE.
-
-🎯 Acceptance Criteria
-
-Admin Endpoints
-
-Endpoint exists to create a match.
-
-Endpoint exists to start a match.
-
-No authentication required.
-
-Match List (User Page)
-
-Displays all started matches.
-
-Goal counts update in real time using Event Streams.
-
-Match Detail Page
-
-Receives only updates from the selected match.
-
-Shows live events (goals + optional events such as cards/fouls).
+1. Navigate to the backend directory:
+```bash
+cd backend
