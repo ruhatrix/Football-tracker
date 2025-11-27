@@ -1,21 +1,19 @@
+// frontend/src/App.tsx
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import MatchList from './components/MatchList';
-import MatchDetail from './components/MatchDetail';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import Header from './components/common/Header';
+import AdminDashboard from './components/admin/AdminDashboard';
+import UserDashboard from './components/user/UserDashboard';
 
 const App: React.FC = () => {
   return (
     <Router>
       <div className="app">
-        <nav style={{ padding: '20px', borderBottom: '1px solid #ccc', marginBottom: '20px' }}>
-          <Link to="/" style={{ fontSize: '24px', fontWeight: 'bold', textDecoration: 'none', color: '#007bff' }}>
-            ⚽ Football Match Tracker
-          </Link>
-        </nav>
-        
+        <Header />
         <Routes>
-          <Route path="/" element={<MatchList />} />
-          <Route path="/match/:matchId" element={<MatchDetail />} />
+          <Route path="/" element={<Navigate to="/user" replace />} />
+          <Route path="/user/*" element={<UserDashboard />} />
+          <Route path="/admin/*" element={<AdminDashboard />} />
         </Routes>
       </div>
     </Router>
