@@ -5,7 +5,7 @@ import { matchAPI } from '../../services/api';
 const CreateMatch: React.FC = () => {
   const [teamA, setTeamA] = useState('');
   const [teamB, setTeamB] = useState('');
-  const [venue, setVenue] = useState('Stadium');
+  const [venue, setVenue] = useState('Main Stadium');
   const [competition, setCompetition] = useState('Friendly Match');
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
@@ -92,7 +92,7 @@ const CreateMatch: React.FC = () => {
                 value={venue}
                 onChange={(e) => setVenue(e.target.value)}
               >
-                <option value="Stadium">Stadium</option>
+                <option value="Main Stadium">Main Stadium</option>
                 <option value="Wembley Stadium">Wembley Stadium</option>
                 <option value="Old Trafford">Old Trafford</option>
                 <option value="Camp Nou">Camp Nou</option>
@@ -143,6 +143,7 @@ const CreateMatch: React.FC = () => {
           {popularMatchups.map(([team1, team2], index) => (
             <button
               key={index}
+              type="button"
               onClick={() => createQuickMatch(team1, team2)}
               className="quick-match-btn"
             >
@@ -157,6 +158,7 @@ const CreateMatch: React.FC = () => {
       {/* Back Button */}
       <div className="back-section">
         <button
+          type="button"
           onClick={() => navigate('/admin')}
           className="back-btn"
         >
