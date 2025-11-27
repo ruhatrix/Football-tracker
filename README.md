@@ -25,7 +25,8 @@ A real-time football match tracking application built with React frontend and Ex
 - **Backend**: Express.js with TypeScript
 - **Real-time Communication**: Server-Sent Events (Event Streams)
 - **Styling**: Modern CSS with gradient designs and animations
-🙏 Acknowledgments-> mentor
+  
+🙏 Mentor
     Naol Kasinet
 
 
